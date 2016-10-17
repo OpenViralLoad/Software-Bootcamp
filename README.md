@@ -32,7 +32,13 @@ For [this data](http://m-selig.ae.illinois.edu/ads/coord/b29root.dat):
 - Return an array of the form [[float, float]] by parsing the float pairs in the file, removing all whitespaces and header info 
 - Plot on an XY plane (hint: import matlibplot.pyplot as plt). 
 
-Notes: You can choose to download the files and place them in the same directory as your python file, or you can use the urllib2 library to obtain the files from the url during runtime
+Notes: 
+- Use `str.split(' ')` to split a string into an array, using whitespaces as a delimeter (no whitespaces in array).
+- After obtaining the float values from the string, ensure they are actually in `float` format with `float(str)`.
+- To convert a list of strings into a list of floats, try `xs = [ float(x) for x in list_of_strings ]`
+- You can choose to download the files and place them in the same directory as your python file, or you can use the urllib2 library to obtain the files from the url during runtime
+
+
 
 ## OpenCV Tasks
 
