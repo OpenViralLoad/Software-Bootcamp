@@ -24,15 +24,12 @@ Areas of focus:
 - Write a class 'class rocket' whose initializer `def __init__( start )' takes an `int` value. For an instance of `rocket` named `rkt`, `rkt.launch()` should begin the `countdown` method, using the `int` passed into the `rocket` initializer.
 - Tie it together. Write a program called `rocketlaunch.py` which takes an `int` as a command line argument, creates an instance of `class rocket`, passes that `int` to the rocket, then begins a countdown.
 
-`
-$ ./python rocketlaunch.py 3
-
-3
-2
-1
-We have liftoff
-
-`
+> $ ./python rocketlaunch.py 3
+> 
+> 3
+> 2
+> 1
+> We have liftoff
 
 For [this data](http://m-selig.ae.illinois.edu/ads/coord/b29root.dat):
 - Return an array of the form [[float, float]] by parsing the float pairs in the file, removing all whitespaces and header info 
