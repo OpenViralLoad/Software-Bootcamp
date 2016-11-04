@@ -8,7 +8,7 @@ Areas of focus:
 - Front End UI/UX
 
 ## Goals
-1. Familiarity with OpenCV image processing 
+1. Familiarity with OpenCV image processing
 2. Experience creating custom Arduino libraries in C++
 3. Knowledge of K-NN, linear classifiers, and other basic ML concepts
 4. Ability to code quickly in Python
@@ -25,14 +25,14 @@ Areas of focus:
 - Tie it together. Write a program called `rocketlaunch.py` which takes an `int` as a command line argument, creates an instance of `class rocket`, passes that `int` to the rocket, then begins a countdown. Format your print statements to occur on one line like so:
 
 > $ ./python rocketlaunch.py 3
-> 
+>
 > 3...2...1...We have liftoff
 
 For [this data](http://m-selig.ae.illinois.edu/ads/coord/b29root.dat):
-- Return an array of the form [[float, float]] by parsing the float pairs in the file, removing all whitespaces and header info 
-- Plot on an XY plane (hint: import matlibplot.pyplot as plt). 
+- Return an array of the form [[float, float]] by parsing the float pairs in the file, removing all whitespaces and header info
+- Plot on an XY plane (hint: import matlibplot.pyplot as plt).
 
-Notes: 
+Notes:
 - Use `str.split(' ')` to split a string into an array, using whitespaces as a delimeter (no whitespaces in array).
 - After obtaining the float values from the string, ensure they are actually in `float` format with `float(str)`.
 - To convert a list of strings into a list of floats, try `xs = [ float(x) for x in list_of_strings ]`
@@ -40,6 +40,23 @@ Notes:
 
 
 
-## OpenCV Tasks
+## OpenCV Image Processing
 
-TBA
+- Download [OpenCV]('http://opencv.org/downloads.html')
+
+All tasks performed in Python. `import cv` or `import cv2`
+
+For [this image]('./chip.png'):
+- Open image and display (`imshow()`).
+- Split the image into its red, green, and blue channels, and display all three images in the same window.
+- Convert original image to grayscale, and write image as new file labeled `chip2.jpg`.
+- Resize the image to 250x250, and write image to new file labeled `chip_resized.jpg`.
+- Create a histogram of the grayscale image. The histogram is a bar graph where the x axis are the values 0 (black) through 255 (white), and the y axis is the number of pixels in the image with that value.
+- Binarize the image. You can use 
+
+For [this image]('./coin.jpg'):
+- Write a python script that returns how many 'regions' are in this image. Hint: convert to grayscale, binarize. Start with the topmost, leftmost pixel, and explore.
+
+Notes: If you are unfamiliar with search algorithms such as DFS/BFS, please consult the software lead.
+
+-
