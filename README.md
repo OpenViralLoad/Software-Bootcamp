@@ -46,7 +46,7 @@ Notes:
 
 All tasks performed in Python. `import cv` or `import cv2`
 
-For [this image]('https://github.com/OpenViralLoad/Software-Bootcamp/chip.png'):
+For [this image]('chip.png'):
 - Open image and display (`imshow()`).
 - Split the image into its red, green, and blue channels, and display all three images in the same window.
 - Convert original image to grayscale, and write image as new file labeled `chip2.jpg`.
@@ -54,7 +54,7 @@ For [this image]('https://github.com/OpenViralLoad/Software-Bootcamp/chip.png'):
 - Create a histogram of the grayscale image. The histogram is a bar graph where the x axis are the values 0 (black) through 255 (white), and the y axis is the number of pixels in the image with that value.
 - Binarize the image. You can use 
 
-For [this image]('https://github.com/OpenViralLoad/Software-Bootcamp/coin.jpg'):
+For [this image]('coin.jpg'):
 - Write a python script that returns how many 'regions' are in this image. Hint: convert to grayscale, binarize. Start with the topmost, leftmost pixel, and explore.
 
 Notes: If you are unfamiliar with search algorithms such as DFS/BFS, please consult the software lead.
