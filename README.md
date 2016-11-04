@@ -52,7 +52,7 @@ For [this image](chip.png):
 - Convert original image to grayscale, and write image as new file labeled `chip2.jpg`.
 - Resize the image to 250x250, and write image to new file labeled `chip_resized.jpg`.
 - Create a histogram of the grayscale image. The histogram is a bar graph where the x axis are the values 0 (black) through 255 (white), and the y axis is the number of pixels in the image with that value.
-- Binarize the image. You can use 
+- Binarize the image. You can use OpenCV's built-in Otsu function. 
 
 For [this image](coin.jpg):
 - Write a python script that returns how many 'regions' are in this image. Hint: convert to grayscale, binarize. Start with the topmost, leftmost pixel, and explore.
